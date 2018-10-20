@@ -25,8 +25,6 @@ class MongoDB(object):
 
 class TempMongoDB(object):
     def __init__(self):
-        # client = pymongo.MongoClient('182.150.37.55', 50070)
-        # client = pymongo.MongoClient('localhost', 50070)
         client = pymongo.MongoClient('localhost', 27017)
         db = client['NetEasy_temp']
         self.collection = db['news_check']
